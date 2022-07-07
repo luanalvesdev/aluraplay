@@ -1,0 +1,281 @@
+*,
+*::before,
+*::after {
+    --azul-escuro: #154580;
+    --azul-medio: #3970BE;
+    --azul-claro: #E5F1FF;
+    --cinza-texto: #444444;
+    --cinza-claro: #ECECEC;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: var(--azul-claro);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    font-size: 14px;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* ESTILOS DO HEADER */
+
+.cabecalho {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    padding: 0 25px;
+    z-index: 2;
+}
+
+.logo {
+    background-image: url(../img/Mobile/Header/Logo.png);
+    background-repeat: no-repeat;
+    padding: 15px 65px;
+    cursor: pointer;
+}
+
+.pesquisar__input {
+    width: 260px;
+    height: 32px;
+    border: 1px solid rgb(211, 211, 211);
+    font-size: 16px;
+    padding: 3px 8px;
+    border: 1px solid rgb(211, 211, 211);
+}
+
+.pesquisar__label {
+    background-image: url(../img/Tablet/Header/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid rgb(211, 211, 211);
+    background-color: #F9F9F9;
+    border-left: none;
+    padding: 8px 18px 5px;
+    cursor: pointer;
+}
+
+.cabecalho__audio {
+    background-image: url(../img/Tablet/Header/mic.png);
+    padding: 20px;
+    display: none;
+}
+
+.cabecalho__videos {
+    background-image: url(../img/Tablet/Header/video_call.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+.cabecalho__apps {
+    background-image: url(../img/Tablet/Header/apps.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 13px 30px 13px 13px;
+}
+
+.cabecalho__notificacoes {
+    background-image: url(../img/Tablet/Header/notifications.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 13px 30px 13px 13px;
+}
+
+.cabecalho__avatar {
+    background-image: url(../img/Tablet/Header/Avatar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 13px 30px 13px 13px;
+}
+
+/* ESTILOS DO MENU LATERAL */
+
+.menu {
+    background-color: var(--azul-escuro);
+    font-size: 14px;
+}
+
+.icone__inicio::before {
+    content: url(../img/Desktop/Elementos_Menu_Lateral/home.png);
+}
+
+.icone__explorar::before {
+    content: url(../img/Desktop/Elementos_Menu_Lateral/explore.png);
+}
+
+.icone__shorts::before {
+    content: url(../img/Desktop/Elementos_Menu_Lateral/shorts.png);
+}
+
+.icone__inscricoes::before {
+    content: url(../img/Desktop/Elementos_Menu_Lateral/subscriptions.png);
+}
+
+.icone__biblioteca::before {
+    content: url(../img/Desktop/Elementos_Menu_Lateral/video_library.png);
+}
+
+.icone__historico::before {
+    content: url(../img/Desktop/Elementos_Menu_Lateral/history.png);
+}
+
+.icone__relogio::before {
+    content: url(../img/Desktop/Elementos_Menu_Lateral/history_toggle_off.png);
+}
+
+.icone__like::before {
+    content: url(../img/Desktop/Elementos_Menu_Lateral/thumb_up_alt.png);
+}
+
+.icone__alura::before {
+    content: url(../img/Desktop/Elementos_Menu_Lateral/Avatar_Alura.png);
+}
+
+.icone__gaveta::before {
+    content: url(../img/Desktop/Elementos_Menu_Lateral/Avatar_Gaveta.png);
+}
+
+.icone__ballerini::before {
+    content: url(../img/Desktop/Elementos_Menu_Lateral/Avatar_Rafa.png);
+}
+
+.icone__iamarino::before {
+    content: url(../img/Desktop/Elementos_Menu_Lateral/Avatar_Atila.png);
+}
+
+.icone__souto::before {
+    content: url(../img/Desktop/Elementos_Menu_Lateral/Avatar_Souto.png);
+}
+
+.icone__nerd::before {
+    content: url(../img/Desktop/Elementos_Menu_Lateral/Avatar_Jovem_Nerd.png);
+}
+
+.icone__deschamps::before {
+    content: url(../img/Desktop/Elementos_Menu_Lateral/Avatar_Deschamps.png);
+}
+
+.icone__mostrar::before {
+    content: url(../img/Desktop/Elementos_Menu_Lateral/keyboard_arrow_down.png);
+}
+
+.icone__videos::before {
+    content: url(../img/Desktop/Elementos_Menu_Lateral/videos.png);
+}
+
+.icone__filmes::before {
+    content: url(../img/Desktop/Elementos_Menu_Lateral/filmes.png);
+}
+
+.icone__jogos::before {
+    content: url(../img/Desktop/Elementos_Menu_Lateral/jogos.png);
+}
+
+/* ESTILOS DA SECAO SUPERIOR */
+
+.superior__secao__container {
+    height: 63px;
+    color: white;
+    font-size: 16px;
+    background-color: var(--azul-claro);
+}
+
+.superior__elemento {
+    color: var(--cinza-texto);
+    font-size: 16px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.superior__elemento:hover {
+    color: white;
+    background-color: var(--azul-escuro);
+}
+
+/* ESTILOS DA SEÇÃO VÍDEOS */
+
+.videos__container {
+    color: black;
+}
+
+/* ESTILOS RODAPÉ */
+
+.rodape__container {
+    width: 100%;
+    height: 900px;
+    color: var(--cinza-texto);
+    line-height: 1.5;
+    font-size: 16px;
+    background-color: white;
+}
+
+.rodape__titulo {
+    color: var(--azul-medio);
+    font-weight: bold;
+    padding: 10px 0 20px 0;
+}
+
+@media(min-width: 834px) {
+
+    body {
+        height: 100vh;
+    }
+
+    /* ESTILOS DO MENU LATERAL */
+
+    .menu {
+        font-size: 16px;
+    }
+
+    /* ESTILOS DA SECAO SUPERIOR */
+
+    .superior__secao__container {
+        left: 82px;
+        border-top: var(--azul-medio) 1px solid;
+        border-bottom: var(--azul-medio) 1px solid;
+        width: auto;
+    }
+
+    /*ESTILOS SEÇÃO VÍDEOS */
+    
+    .videos__item:hover {
+        transform: scale(1.3);
+    }
+
+    /* ESTILOS RODAPÉ */
+
+    .rodape__container {
+        height: 450px;
+        padding-left: 74px;
+    }
+
+}
+
+@media(min-width: 1440px) {
+
+    /* ESTILOS DO MENU LATERAL */
+
+    .menu__lista {
+        border-bottom: 1.5px solid var(--azul-medio);
+    }
+
+    /* ESTILOS DA SEÇÃO SUPERIOR */
+
+
+    /* ESTILOS RODAPÉ */
+
+    .rodape__container {
+        padding-left: 240px;
+        height: 225px;
+    }
+
+}

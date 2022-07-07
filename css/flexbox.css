@@ -1,0 +1,232 @@
+/* Aula 1 */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__pesquisar {
+    display: none;
+}
+
+/* Aula 3 */
+
+/* Estilos da seção superior */
+
+.superior__secao__container {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    gap: 15px;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    left: 0;
+    overflow: scroll;
+    z-index: 2;
+    padding: 0 20px;
+}
+
+/* ESTILOS DO MENU LATERAL */
+
+.menu {
+    position: fixed;
+    bottom: 0;
+    height: 74px;
+    width: 100%;
+    z-index: 2;
+}
+
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4) {
+    display: none;
+}
+
+.menu__lista {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.menu__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+    gap: 5px;
+}
+
+/* Aula 3 */
+
+/* SEÇÃO VÍDEOS */ 
+
+.videos__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+    z-index: 1;
+    padding: 150px 10px 10px 10px;
+}
+
+.videos__item {
+    flex-grow: 1;
+    transition: transform .5s linear;
+    width: 315px;
+    height: 315px;
+}
+
+.videos__item iframe {
+    height: 72%;
+    width: 100%;
+}
+
+.videos__item:hover {
+    transform: scale(1.3);
+}
+
+/* grid vídeos */
+
+.descricao-video {
+    margin-top: 1rem;
+    display: grid;
+    text-align: start;
+    column-gap: 1rem;
+    grid-template-columns: auto 1fr;
+    max-width: 400px;
+}
+.descricao-video img {
+    grid-area:  1 / 1 / 3 / 2;
+}
+.descricao-video h3 {
+    grid-area:  1 / 2 / 2 / 3;
+    font-weight: 700;
+    color: #444444;
+}
+.descricao-video p {
+    grid-area:  2 / 2 / 3 / 3;
+    font-size: 14px;
+    color: #444444;
+}
+
+/* Rodapé */
+
+.rodape__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+@media(min-width: 834px) {
+
+    /*Aula 1*/
+    .cabecalho__pesquisar {
+        display: block;
+        /*4*/
+    }
+
+    /* Aula 3 */
+
+    /* ESTILOS DO MENU LATERAL */
+
+    .menu {
+        left: 0;
+        height: auto;
+        width: 74px;
+        top: 80px;
+    }
+
+    .menu__lista {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 15px;
+        gap: 33px;
+    }
+
+    /* Aula 2 */
+
+    .rodape__container {
+        justify-content: space-between;
+    }
+
+    /* Seção videos */
+
+    .videos__container {
+        padding-left: 82px;
+        padding-right: 8px;
+    }
+
+    .videos__item {
+        flex-grow: 1;
+        transition: transform .5s linear;
+    }
+
+    .videos__item iframe {
+        width: 100%;
+        height: 65%;
+    }
+
+    .videos__item:hover {
+        transform: scale(1.3);
+    }
+
+}
+
+@media(min-width: 1440px) {
+
+    /* ESTILOS DO MENU LATERAL */
+
+    .menu {
+        width: 239px;
+        overflow: auto;
+    }
+
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4) {
+        display: flex;
+    }
+
+    .menu__lista {
+        height: auto;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 20px 0px 20px 15px;
+    }
+
+    .menu__item {
+        flex-direction: row;
+        align-self: flex-start;
+        gap: 15px;
+    }
+
+    /* Aula 2 */
+
+    /* SEÇÃO VÍDEOS */ 
+
+    .videos__container {
+        padding-right: 10px;
+        padding-left: 247px;
+    }
+
+    .superior__secao__container {
+        left: 247px;
+    }
+
+    .videos__item iframe {
+        width: 100%;
+        height: 69%;
+    }
+
+    .menu__lista:last-child {
+        flex-direction: column-reverse;
+    }
+
+}

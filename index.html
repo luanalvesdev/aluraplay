@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/flexbox.css">
+    <title>AluraPlay</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Cabecalho -->
+    <header>
+
+        <nav class="cabecalho">
+            <h1 class="logo" href="#"></h1>
+
+            <div class="cabecalho__pesquisar">
+                <form action="">
+                    <input type="search" placeholder="Pesquisar" id="pesquisar" class="pesquisar__input">
+                    <label for="pesquisar" class="pesquisar__label"></label>
+                </form>
+                <a href="#" class="cabecalho__audio"></a>
+            </div>
+
+            <div class="cabecalho__icones">
+                <a href="#" class="cabecalho__videos"></a>
+                <a href="#" class="cabecalho__apps"></a>
+                <a href="#" class="cabecalho__notificacoes"></a>
+                <a href="#" class="cabecalho__avatar"></a>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Menu lateral -->
+
+    <aside class="menu">
+        <ul class="menu__lista">
+            <li class="menu__item">
+                <i class="icone__inicio icone-item"></i>
+                <a href="#">Início</a>
+            </li>
+
+            <li class="menu__item">
+                <i class="icone__explorar icone-item"></i>
+                <a href="#">Explorar</a>
+            </li>
+
+            <li class="menu__item">
+                <i class="icone__shorts icone-item"></i>
+                <a href="#">Shorts</a>
+            </li>
+            <li class="menu__item">
+                <i class="icone__inscricoes icone-item"></i>
+                <a href="#">Inscrições</a>
+            </li>
+            <li class="menu__item">
+                <i class="icone__biblioteca icone-item"></i>
+                <a href="#">Biblioteca</a>
+            </li>
+        </ul>
+
+        <ul class="menu__lista">
+            <li class="menu__item">
+                <i class="icone__historico icone-item"></i>
+                <a href="#">Histórico</a>
+            </li>
+            <li class="menu__item">
+                <i class="icone__relogio icone-item"></i>
+                <a href="#">Assistir mais tarde</a>
+            </li>
+            <li class="menu__item">
+                <i class="icone__like icone-item"></i>
+                <a href="#">Marcados com like</a>
+            </li>
+        </ul>
+
+        <ul class="menu__lista">
+            <li class="menu__item" style="order: 7">
+                <i class="icone__nerd icone-item"></i>
+                <a href="#">Jovem Nerd</a>
+            </li>
+            <li class="menu__item" style="order: 5">
+                <i class="icone__iamarino icone-item"></i>
+                <a href="#">Atila Iamarino</a>
+            </li>
+            <li class="menu__item" style="order: 1">
+                INSCRIÇÕES
+            </li>
+            <li class="menu__item" style="order: 3">
+                <i class="icone__gaveta icone-item"></i>
+                <a href="#">Gaveta</a>
+            </li>
+            <li class="menu__item" style="order: 4">
+                <i class="icone__ballerini icone-item"></i>
+                <a href="#">Rafaella Ballerini</a>
+            </li>
+            <li class="menu__item" style="order: 8">
+                <i class="icone__deschamps icone-item"></i>
+                <a href="#">Felipe Deschamps</a>
+            </li>
+            <li class="menu__item" style="order: 6">
+                <i class="icone__souto icone-item"></i>
+                <a href="#">Mario Souto</a>
+            </li>
+            <li class="menu__item" style="order: 2">
+                <i class="icone__alura icone-item"></i>
+                <a href="#">Alura</a>
+            </li>
+            <li class="menu__item" style="order: 9">
+                <i class="icone__mostrar icone-item"></i>
+                <a href="#">Mostrar mais 2</a>
+            </li>
+        </ul>
+        <ul class="menu__lista">
+            <li class="menu__item">
+                <i class="icone__videos icone-item"></i>
+                <a href="#">Vídeo Premium</a>
+            </li>
+            <li class="menu__item">
+                <i class="icone__jogos icone-item"></i>
+                <a href="#">Jogos</a>
+            </li>
+            <li class="menu__item">
+                <i class="icone__filmes icone-item"></i>
+                <a href="#">Filmes</a>
+            </li>
+            <li class="menu__item">
+                MAIS DA PÁGINA
+            </li>
+        </ul>
+    </aside>
+
+    <!-- Seção superior -->
+
+    <section class="superior__secao__container">
+        <a class="superior__elemento" href="#">Tudo</a>
+        <a class="superior__elemento" href="#">Debates</a>
+        <a class="superior__elemento" href="#">Ao Vivo</a>
+        <a class="superior__elemento" href="#">Podcasts</a>
+        <a class="superior__elemento" href="#">Fundos de Investimento</a>
+        <a class="superior__elemento" href="#">Desenhos</a>
+        <a class="superior__elemento" href="#">Data Science</a>
+        <a class="superior__elemento" href="#">Apps</a>
+        <a class="superior__elemento" href="#">Linguagem de Programação</a>
+        <a class="superior__elemento" href="#">Ciência da Computação</a>
+        <a class="superior__elemento" href="#">Marketing</a>
+    </section>
+
+    <!-- Vídeos -->
+
+    <ul class="videos__container" alt="videos alura">
+        <li class="videos__item">
+            <iframe src="https://www.youtube.com/embed/pA-EgOaF23I"
+                title="Qual é o melhor hardware para programação com Mario Souto | #HipsterPontoTube" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+                <div class="descricao-video">
+                    <img src="./img/Desktop/Thumbnails_Vídeos/Ellipse 11.png" alt="logo canal alura">
+                    <h3>Qual é o melhor hardware para programação com Mario Souto</h3>
+                    <p>236 mil visualizações - Há 8 dias</p>
+                </div>
+        </li>
+        <li class="videos__item">
+            <iframe src="https://www.youtube.com/embed/OrnUhR41MYI"
+                title="Voltando ao mercado após a maternidade: Ana Silvério" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </li>
+        <li class="videos__item">
+            <iframe src="https://www.youtube.com/embed/YhnNOTde2I0"
+                title="Mercado de Trabalho | Desmistificando Mobile - Episódio 5" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </li>
+        <li class="videos__item">
+            <iframe src="https://www.youtube.com/embed/y8FeZMv37WU"
+                title="Conhecendo a linguagem Go | Hipsters.Talks" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </li>
+        <li class="videos__item">
+            <iframe src="https://www.youtube.com/embed/fmu1LQvZhms"
+                title="Desmistificando mobile- Linguagens e Frameworks - Episódio 2" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </li>
+        <li class="videos__item">
+            <iframe src="https://www.youtube.com/embed/jpuJ1qrluoU"
+                title="Orientação a objetos com Roberta Arcoverde | #HipstersPontoTube" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </li>
+        <li class="videos__item">
+            <iframe src="https://www.youtube.com/embed/2HhPcadvjqU"
+                title="Tire suas dúvidas sobre o bootcamp de Data Science." frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </li>
+        <li class="videos__item">
+            <iframe src="https://www.youtube.com/embed/h83e1aAM5xQ" title="
+                4:06
+                TOCANDO AGORA
+                Linguagens e ferramentas usadas em Ciência de Dados | Universo Data Science - Episódio 3"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </li>
+        <li class="videos__item">
+            <iframe src="https://www.youtube.com/embed/CnB3eLTrkn4"
+                title="Reencontrando a paixão por programar: Beatriz Ramerindo" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </li>
+        <li class="videos__item">
+            <iframe src="https://www.youtube.com/embed/vf9P_PycgRw"
+                title="Híbridos: Flutter e React Native | Desmistificando Mobile - Episódio 4" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </li>
+        <li class="videos__item">
+            <iframe src="https://www.youtube.com/embed/Nts3P35mHzE"
+                title="Data Science na prática- com Jéssika Ribeiro do Grupo Boticário | Universo Data Science - Episódio 4"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </li>
+        <li class="videos__item">
+            <iframe src="https://www.youtube.com/embed/HBVCsBtsmzA"
+                title="baNaNa | Memes do JavaScript - Episódio 2" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </li>
+        <li class="videos__item">
+            <iframe src="https://www.youtube.com/embed/SyEdlBSw11k"
+                title="Aniversário da Casa do Código | 10 anos da sua editora de Tecnologia" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </li>
+        <li class="videos__item">
+            <iframe src="https://www.youtube.com/embed/FKYBCl_I9zU"
+                title="Jetpack Compose: Estados e animações | #AluraMais" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </li>
+        <li class="videos__item">
+            <iframe src="https://www.youtube.com/embed/68EGCA67g_A"
+                title="[Casa do Código] Lançamento do Livro Certificação Linux" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </li>
+        <li class="videos__item">
+            <iframe src="https://www.youtube.com/embed/VHxoyduIt18"
+                title="Por que o JavaScript é assim? | Memes do JavaScript - Episódio 1" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </li>
+        <li class="videos__item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6b9quDW5HqA"
+                title="Programação para transformação social com Camila Achutti | #HipstersPontoTube" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </li>
+        <li class="videos__item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Is6c9KSGCbk"
+                title="Como posso estudar melhor? #HipstersPontoTube" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </li>
+    </ul>
+
+
+    <!-- <Seção rodapé> -->
+    <footer class="rodape__container">
+        <section>
+            <h2 class="rodape__titulo">Programação</h2>
+            <p class="rodape__texto">Lógica</p>
+            <p>Python</p>
+            <p>Computação</p>
+            <p>Jogos</p>
+            <p>Computação</p>
+            <p>Node JS</p>
+        </section>
+
+        <section>
+            <h2 class="rodape__titulo">Data Science</h2>
+            <p class="rodape__texto">Ciência de dados</p>
+            <p>BI</p>
+            <p>SQL</p>
+            <p>Banco de Dados</p>
+            <p>Machine Learning</p>
+            <p>NoSQL</p>
+        </section>
+
+        <section>
+            <h2 class="rodape__titulo">UX e Design</h2>
+            <p class="rodape__texto">Photoshop</p>
+            <p>Illustrator</p>
+            <p>Usabilidade</p>
+            <p>Vídeo e Motion</p>
+            <p>Figma</p>
+            <p>Interface</p>
+        </section>
+
+        <section>
+            <h2 class="rodape__titulo">Inovação e Gestão</h2>
+            <p class="rodape__texto">Métodos ágeis</p>
+            <p>Softskills</p>
+            <p>Liderança</p>
+            <p>Gestão</p>
+            <p>Startups</p>
+            <p>Vendas</p>
+        </section>
+
+        <section>
+            <h2 class="rodape__titulo">Front-end</h2>
+            <p class="rodape__texto">HTML</p>
+            <p>CSS</p>
+            <p>React</p>
+            <p>Angular</p>
+            <p>JavaScript</p>
+            <p>jQuery</p>
+        </section>
+
+        <section>
+            <h2 class="rodape__titulo">Devops</h2>
+            <p class="rodape__texto">AWS</p>
+            <p>Azure</p>
+            <p>Docker</p>
+            <p>Segurança</p>
+            <p>IaC</p>
+            <p>Linux</p>
+        </section>
+
+        <section>
+            <h2 class="rodape__titulo">Mobile</h2>
+            <p class="rodape__texto">React Native</p>
+            <p>Flutter</p>
+            <p>iOS</p>
+            <p>Swift</p>
+            <p>Android</p>
+            <p>Kotlin</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>
